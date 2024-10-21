@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اقتباسات ملهمة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ربط مكتبة أيقونات Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .quote-container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .quote {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 15px;
+            width: 60%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .quote:hover {
+            transform: scale(1.05);
+        }
+
+        .social-media {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* حاوية القائمة الدائرية */
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(0deg);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* القائمة الدائرية */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 220px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .menu.show {
+            opacity: 1;
+        }
+
+        /* توزيع الأيقونات بشكل دائري */
+        .menu li {
+            position: absolute;
+        }
+
+        .menu li:nth-child(1) {
+            top: 0;
+        }
+
+        .menu li:nth-child(2) {
+            right: 0;
+        }
+
+        .menu li:nth-child(3) {
+            bottom: 0;
+        }
+
+        .menu li:nth-child(4) {
+            left: 0;
+        }
+
+        .menu li:nth-child(5) {
+            bottom: -100px;
+        }
+
+        /* شكل الأيقونات */
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .menu a:hover {
+            transform: scale(1.3);
+            background: linear-gradient(135deg, #42e695, #3bb2b8);
+        }
+
+        .toggle {
+            background: linear-gradient(135deg, #42e695, #3bb2b8);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .toggle:hover {
+            transform: scale(1.2);
+            background: linear-gradient(135deg, #feb47b, #ff7e5f);
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quote-container">
+        <h1>اقتباسات ملهمة</h1>
+        <div class="quote">
+            <p>"النجاح لا يأتي إلا بالإصرار والمثابرة"</p>
+        </div>
+        <div class="quote">
+            <p>"التحديات هي ما يجعل الحياة مثيرة"</p>
+        </div>
+        <div class="quote">
+            <p>"تقدم بخطوة واحدة إلى الأمام كل يوم"</p>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <div class="container">
+            <div class="toggle">
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+
+            <ul class="menu">
+                <li class="active">
+                    <a href="https://t.me/zyd_Laraa19" target="_blank">
+                        <ion-icon name="paper-plane-outline"></ion-icon> <!-- زر تيلجرام القروب -->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/zyd73292e" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon> <!-- زر انستجرام -->
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:zaid712332@gmail.com">
+                        <ion-icon name="mail-outline"></ion-icon> <!-- زر البريد الإلكتروني -->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/I_v_t1" target="_blank">
+                        <ion-icon name="person-outline"></ion-icon> <!-- زر تيلجرام للتواصل -->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@mstar_h?_r=1&_d=eegmc4hbmm7di9&sec_uid=MS4wLjABAAAAym06lfi3FfTCxhB8iJeZducMJaqdaDwPFeepOU00U-gTQnIvy3v4iDuRyCTDeYbJ&share_author_id=7384449559210345479" target="_blank">
+                        <ion-icon name="logo-tiktok"></ion-icon> <!-- زر تيك توك للدعم -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="description">
+        <p>مطور برمجيات وخبير أمن سيبراني - للتواصل والدعم عبر تيك توك.</p>
+    </div>
+
+    <script>
+        // إظهار وإخفاء القائمة عند النقر
+        const toggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu');
+        let angle = 0;
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+            angle += 360;
+            document.querySelector('.container').style.transform = `rotate(${angle}deg)`;
+        });
+
+        // تغيير لون الاقتباسات عند التمرير
+        document.querySelectorAll('.quote').forEach(quote => {
+            quote.addEventListener('mouseover', function() {
+                quote.style.backgroundColor = '#e0e0e0';
+            });
+
+            quote.addEventListener('mouseout', function() {
+                quote.style.backgroundColor = '#fff';
+            });
+        });
+    </script>
+
+</body>
+</html>
